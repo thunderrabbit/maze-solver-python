@@ -39,9 +39,9 @@ class Solver:
         self.END_COLOR = self.COLOR_BLUE
         self.FRONTIER_COLOR = self.COLOR_GREEN
         
-        # TODO: START/END is currently hardcoded for 'maze_000.jpeg'.
-        self.START = (400,984)
-        self.END = (398,25)    
+        # TODO: START/END is currently hardcoded.
+        self.START = (616,852)
+        self.END = (696,996)    
     
         # Output file.
         self.DIR_OUT = 'out'
@@ -94,7 +94,7 @@ class Solver:
         
         self.image.save(self.file_out)
         logging.info("Solution saved as '{0}'.".format(self.file_out))
-        #self.image.show()
+        self.image.show()
 
     def _drawX(self, pos, color=(255,0,0)):
         x,y = pos
